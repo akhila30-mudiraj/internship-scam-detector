@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Scam Detector</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛡️ Internship Scam Detector</h1>
+
+    <p class="subtitle">
+        Analyze internship offers and detect possible scam indicators before applying.
+    </p>
+
+    <form action="/check" method="post">
+
+        <label for="companyName">🏢 Company Name</label>
+        <input type="text"
+               id="companyName"
+               name="companyName"
+               placeholder="Enter company name"
+               required>
+
+        <label for="website">🌐 Website URL</label>
+        <input type="text"
+               id="website"
+               name="website"
+               placeholder="https://example.com">
+
+        <label for="email">📧 Contact Email</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="hr@company.com">
+
+        <label for="stipend">💰 Monthly Stipend (₹)</label>
+        <input type="number"
+               id="stipend"
+               name="stipend"
+               placeholder="10000">
+
+        <label for="registrationFee">⚠️ Registration Fee (₹)</label>
+        <input type="number"
+               id="registrationFee"
+               name="registrationFee"
+               placeholder="0">
+
+        <button type="submit">
+            🔍 Analyze Internship
+        </button>
+
+    </form>
+
+    <div class="footer">
+        Built with Java • Spring Boot • Maven
+    </div>
+
+</div>
+
+</body>
+</html>
